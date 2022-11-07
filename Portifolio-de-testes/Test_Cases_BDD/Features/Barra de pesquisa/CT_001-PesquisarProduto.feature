@@ -34,8 +34,6 @@ Contexto:
 
 Esquema de cenário:
 |Produto           |
-|LED               |
-|Bateria para rádio|
-|Cabo chicote      |
-|Lâmpada 12v       |
+|LED emissor       |
+
 

@@ -9,14 +9,6 @@ ${BROWSER}  chrome
 ${URL}   https://www.newpecas.com.br/produto/led-5mm-vermelho-alto-brilho/685
 
 
-
-**** Test Case ***
-CT_002 - Validar funcionalidade "Gostei"
-    Acessar a página de um "produto" do e-commerce NewPeças
-    Clicar no botão "Gostei"
-    Clicar na funcionalidade "Gostei"
-    Conferir se o "produto" adicionado consta na lista
-
 *** Keywords ***
 Abrir o navegador
     Open Browser  ${URL}  ${BROWSER}
@@ -43,6 +35,11 @@ Conferir se o "produto" adicionado consta na lista
     Element Should Contain  class=feature-name  Led 5Mm Vermelho    
 
 
-    
+**** Test Case ***
+CT_003 - Validar funcionalidade "Gostei"
+    Acessar a página de um "produto" do e-commerce NewPeças
+    Clicar no botão "Gostei"
+    Clicar na funcionalidade "Gostei"
+    Conferir se o "produto" adicionado consta na lista    
 
 

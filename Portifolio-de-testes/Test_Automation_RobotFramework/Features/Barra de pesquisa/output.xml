@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.7 on win32)" generated="20221107 12:00:05.137" rpa="false" schemaversion="3">
+<suite id="s1" name="Barra de pesquisa" source="C:\Users\junin\Desktop\portifolio_testes\portifolio-de-testes\Test_Automation_RobotFramework\Features\Barra de pesquisa">
+<suite id="s1-s1" name="CT 001" source="C:\Users\junin\Desktop\portifolio_testes\portifolio-de-testes\Test_Automation_RobotFramework\Features\Barra de pesquisa\CT_001.robot">
+<test id="s1-s1-t1" name="CT_001 - Pesquisa &quot;produto&quot;" line="38">
+<kw name="Abrir o navegador" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221107 12:00:10.097" level="INFO">Opening browser 'chrome' to base url 'https://www.newpecas.com.br'.</msg>
+<status status="PASS" starttime="20221107 12:00:10.096" endtime="20221107 12:00:40.216"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20221107 12:00:40.216" endtime="20221107 12:00:40.363"/>
+</kw>
+<status status="PASS" starttime="20221107 12:00:10.095" endtime="20221107 12:00:40.363"/>
+</kw>
+<kw name="Acessar a página home do e-comerce NewPeças">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>class=header-logo</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221107 12:00:40.389" endtime="20221107 12:00:40.946"/>
+</kw>
+<status status="PASS" starttime="20221107 12:00:40.364" endtime="20221107 12:00:40.947"/>
+</kw>
+<kw name="Digitar o nome do &quot;${PRODUTO}&quot; na barra de pesquisa" sourcename="Digitar o nome do &quot;${PRODUTO}&quot; na barra de pesquisa">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name=busca</arg>
+<arg>${PRODUTO}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221107 12:00:40.949" level="INFO">Typing text 'LED emissor' into text field 'name=busca'.</msg>
+<status status="PASS" starttime="20221107 12:00:40.949" endtime="20221107 12:00:41.156"/>
+</kw>
+<status status="PASS" starttime="20221107 12:00:40.948" endtime="20221107 12:00:41.156"/>
+</kw>
+<kw name="Clicar no botão pesquisar">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//*[@id="header-form"]/button[2]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221107 12:00:41.159" level="INFO">Clicking element 'xpath=//*[@id="header-form"]/button[2]'.</msg>
+<status status="PASS" starttime="20221107 12:00:41.158" endtime="20221107 12:00:41.635"/>
+</kw>
+<status status="PASS" starttime="20221107 12:00:41.157" endtime="20221107 12:00:41.636"/>
+</kw>
+<kw name="Conferir se o produto foi listado no site">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>class=product-name</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221107 12:00:41.638" endtime="20221107 12:00:41.703"/>
+</kw>
+<kw name="Element Should Contain" library="SeleniumLibrary">
+<arg>class=product-name</arg>
+<arg>Led Emissor Infra Vermelho 5Mm</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<msg timestamp="20221107 12:00:41.737" level="INFO">Element 'class=product-name' contains text 'Led Emissor Infra Vermelho 5Mm'.</msg>
+<status status="PASS" starttime="20221107 12:00:41.704" endtime="20221107 12:00:41.737"/>
+</kw>
+<kw name="Capture Element Screenshot" library="SeleniumLibrary">
+<arg>id=Pbusca-prod-714</arg>
+<doc>Captures a screenshot from the element identified by ``locator`` and embeds it into log file.</doc>
+<msg timestamp="20221107 12:00:46.009" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-element-screenshot-1.png"&gt;&lt;img src="selenium-element-screenshot-1.png" width="400px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20221107 12:00:41.737" endtime="20221107 12:00:46.009"/>
+</kw>
+<status status="PASS" starttime="20221107 12:00:41.637" endtime="20221107 12:00:46.009"/>
+</kw>
+<kw name="Fechar o navegador" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20221107 12:00:46.013" endtime="20221107 12:00:48.665"/>
+</kw>
+<status status="PASS" starttime="20221107 12:00:46.010" endtime="20221107 12:00:48.666"/>
+</kw>
+<status status="PASS" starttime="20221107 12:00:10.093" endtime="20221107 12:00:48.667"/>
+</test>
+<status status="PASS" starttime="20221107 12:00:05.445" endtime="20221107 12:00:48.670"/>
+</suite>
+<status status="PASS" starttime="20221107 12:00:05.140" endtime="20221107 12:00:48.677"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Barra de pesquisa">Barra de pesquisa</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="CT 001">Barra de pesquisa.CT 001</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

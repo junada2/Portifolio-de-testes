@@ -4,18 +4,11 @@ Test Teardown  Fechar o navegador
 Library  SeleniumLibrary
 
 
-
 *** Variable ***
 ${BROWSER}  chrome
 ${URL}   https://www.newpecas.com.br
 ${PRODUTO}  LED emissor
 
-**** Test Case ***
-CT_001 - Pesquisa de produto
-    Acessar a página home do e-comerce NewPeças
-    Digitar o nome do produto "${PRODUTO}" na barra de pesquisa
-    Clicar no botão pesquisar
-    Conferir se o produto foi listado no site
 
 *** Keywords ***
 Abrir o navegador
@@ -29,7 +22,7 @@ Acessar a página home do e-comerce NewPeças
     Wait Until Element Is Visible  class=header-logo
     
 
-Digitar o nome do produto "${PRODUTO}" na barra de pesquisa
+Digitar o nome do "${PRODUTO}" na barra de pesquisa
     Input Text  name=busca  ${PRODUTO}
 
 Clicar no botão pesquisar
@@ -40,3 +33,10 @@ Conferir se o produto foi listado no site
     Element Should Contain  class=product-name  Led Emissor Infra Vermelho 5Mm
     Capture Element Screenshot  id=Pbusca-prod-714
 
+
+**** Test Case ***
+CT_001 - Pesquisa "produto"
+    Acessar a página home do e-comerce NewPeças
+    Digitar o nome do "${PRODUTO}" na barra de pesquisa
+    Clicar no botão pesquisar
+    Conferir se o produto foi listado no site

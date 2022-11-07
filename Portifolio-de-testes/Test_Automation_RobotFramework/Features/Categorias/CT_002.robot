@@ -10,13 +10,6 @@ ${URL}   https://www.newpecas.com.br
 ${CATEGORIA}  Teclas
 
 
-**** Test Case ***
-CT_002 - Consultar sessão de teclas variadas
-    Acessar a página home do e-comerce NewPeças
-    Abrir o menu 'Categorias'
-    Clicar em '${CATEGORIA}'
-    Conferir se apenas teclas são exibidas na seleção
-
 *** Keywords ***
 Abrir o navegador
     Open Browser  ${URL}  ${BROWSER}
@@ -29,6 +22,8 @@ Acessar a página home do e-comerce NewPeças
     Wait Until Element Is Visible  class=header-logo
 
 Abrir o menu 'Categorias'
+    Wait Until Element Is Visible  id:box-cookies
+    Click Element  xpath://*[@id="box-cookies"]/div/div[2]/button
     Mouse Over  xpath=//*[@id="header-navbar-fixed"]/div[2]/div/div/div/div/ul/li[1]/a
     Wait Until Element Is Visible  xpath=//span[@class="megamenu-title" and contains(text(), '${CATEGORIA}')]
 
@@ -44,3 +39,10 @@ Conferir se apenas teclas são exibidas na seleção
     Capture Element Screenshot  class=product-name
     END 
 
+
+**** Test Case ***
+CT_002 - Consultar sessão de teclas variadas
+    Acessar a página home do e-comerce NewPeças
+    Abrir o menu 'Categorias'
+    Clicar em '${CATEGORIA}'
+    Conferir se apenas teclas são exibidas na seleção

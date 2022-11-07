@@ -15,9 +15,9 @@ CT_002 - Consultar sessão de "teclas/variadas"
 <Quem>
 Eu, como usuário pessoa física do e-comerce New Peças.
 <O que>
-Desejo realizar uma consulta de teclas na sessão teclas
+Desejo realizar uma consulta de de produtos na sessão teclas
 <Por que>
-Quero consultar a variedade de produtos da categoria teclas
+Quero consultar a variedade de produtos da categoria
 
 
 Contexto:
