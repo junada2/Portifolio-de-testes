@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.7 on win32)" generated="20221110 11:49:42.061" rpa="false" schemaversion="3">
+<suite id="s1" name="Lista De Busca" source="C:\Users\junin\Desktop\portifolio_testes\portifolio-de-testes\test_automation_robotframework\features\lista de busca">
+<suite id="s1-s1" name="CT 004" source="C:\Users\junin\Desktop\portifolio_testes\portifolio-de-testes\test_automation_robotframework\features\lista de busca\CT_004.robot">
+<test id="s1-s1-t1" name="CT_004 - Verificar Produtos Buscados Por Lista de Busca" line="47">
+<kw name="Abrir o navegador" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221110 11:49:42.582" level="INFO">Opening browser 'chrome' to base url 'https://www.newpecas.com.br'.</msg>
+<status status="PASS" starttime="20221110 11:49:42.581" endtime="20221110 11:49:46.461"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20221110 11:49:46.462" endtime="20221110 11:49:46.594"/>
+</kw>
+<status status="PASS" starttime="20221110 11:49:42.580" endtime="20221110 11:49:46.594"/>
+</kw>
+<kw name="Clicar em lista de busca">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>class=header-logo</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221110 11:49:46.596" endtime="20221110 11:49:46.675"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>class=icofont-settings</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221110 11:49:46.675" endtime="20221110 11:49:46.728"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>class=icofont-settings</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221110 11:49:46.728" level="INFO">Clicking element 'class=icofont-settings'.</msg>
+<status status="PASS" starttime="20221110 11:49:46.728" endtime="20221110 11:49:46.798"/>
+</kw>
+<status status="PASS" starttime="20221110 11:49:46.595" endtime="20221110 11:49:46.798"/>
+</kw>
+<kw name="Adicionar produtos na lista de busca">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>id:item_topo</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221110 11:49:46.800" endtime="20221110 11:49:46.839"/>
+</kw>
+<for flavor="IN">
+<var>${produto}</var>
+<value>@{LISTA_PRODUTOS}</value>
+<iter>
+<var name="${produto}">Cabo</var>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:item_topo</arg>
+<arg>${produto}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221110 11:49:46.840" level="INFO">Typing text 'Cabo' into text field 'id:item_topo'.</msg>
+<status status="PASS" starttime="20221110 11:49:46.839" endtime="20221110 11:49:46.950"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>class:icofont-plus</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221110 11:49:46.951" level="INFO">Clicking element 'class:icofont-plus'.</msg>
+<status status="PASS" starttime="20221110 11:49:46.951" endtime="20221110 11:49:47.043"/>
+</kw>
+<status status="PASS" starttime="20221110 11:49:46.839" endtime="20221110 11:49:47.043"/>
+</iter>
+<iter>
+<var name="${produto}">Led</var>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:item_topo</arg>
+<arg>${produto}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221110 11:49:47.045" level="INFO">Typing text 'Led' into text field 'id:item_topo'.</msg>
+<status status="PASS" starttime="20221110 11:49:47.044" endtime="20221110 11:49:47.163"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>class:icofont-plus</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221110 11:49:47.164" level="INFO">Clicking element 'class:icofont-plus'.</msg>
+<status status="PASS" starttime="20221110 11:49:47.163" endtime="20221110 11:49:47.218"/>
+</kw>
+<status status="PASS" starttime="20221110 11:49:47.044" endtime="20221110 11:49:47.218"/>
+</iter>
+<iter>
+<var name="${produto}">Placa</var>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:item_topo</arg>
+<arg>${produto}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221110 11:49:47.219" level="INFO">Typing text 'Placa' into text field 'id:item_topo'.</msg>
+<status status="PASS" starttime="20221110 11:49:47.218" endtime="20221110 11:49:47.318"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>class:icofont-plus</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221110 11:49:47.318" level="INFO">Clicking element 'class:icofont-plus'.</msg>
+<status status="PASS" starttime="20221110 11:49:47.318" endtime="20221110 11:49:47.575"/>
+</kw>
+<status status="PASS" starttime="20221110 11:49:47.218" endtime="20221110 11:49:47.575"/>
+</iter>
+<status status="PASS" starttime="20221110 11:49:46.839" endtime="20221110 11:49:47.575"/>
+</for>
+<status status="PASS" starttime="20221110 11:49:46.799" endtime="20221110 11:49:47.575"/>
+</kw>
+<kw name="Clicar em pesquisar">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="search_list"]/div/div/form/button[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221110 11:49:47.577" level="INFO">Clicking element 'xpath://*[@id="search_list"]/div/div/form/button[1]'.</msg>
+<status status="PASS" starttime="20221110 11:49:47.577" endtime="20221110 11:49:48.070"/>
+</kw>
+<status status="PASS" starttime="20221110 11:49:47.576" endtime="20221110 11:49:48.071"/>
+</kw>
+<kw name="Verificar elementos buscados">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>xpath:/html/body/div[15]/div/div[1]/div/div[1]/div/ul/li[1]/a/h2</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221110 11:49:48.073" endtime="20221110 11:49:48.152"/>
+</kw>
+<for flavor="IN">
+<var>${item}</var>
+<value>1</value>
+<value>2</value>
+<value>3</value>
+<iter>
+<var name="${item}">1</var>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<arg>xpath:/html/body/div[15]/div/div[1]/div/div[1]/div/ul/li[${item}]/a/h2</arg>
+<arg>${PRODUTO_${item}}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<msg timestamp="20221110 11:49:48.153" level="INFO">Verifying element 'xpath:/html/body/div[15]/div/div[1]/div/div[1]/div/ul/li[1]/a/h2' contains exact text 'Cabo'.</msg>
+<status status="PASS" starttime="20221110 11:49:48.153" endtime="20221110 11:49:48.200"/>
+</kw>
+<status status="PASS" starttime="20221110 11:49:48.153" endtime="20221110 11:49:48.200"/>
+</iter>
+<iter>
+<var name="${item}">2</var>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<arg>xpath:/html/body/div[15]/div/div[1]/div/div[1]/div/ul/li[${item}]/a/h2</arg>
+<arg>${PRODUTO_${item}}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<msg timestamp="20221110 11:49:48.202" level="INFO">Verifying element 'xpath:/html/body/div[15]/div/div[1]/div/div[1]/div/ul/li[2]/a/h2' contains exact text 'Led'.</msg>
+<status status="PASS" starttime="20221110 11:49:48.201" endtime="20221110 11:49:48.250"/>
+</kw>
+<status status="PASS" starttime="20221110 11:49:48.200" endtime="20221110 11:49:48.251"/>
+</iter>
+<iter>
+<var name="${item}">3</var>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<arg>xpath:/html/body/div[15]/div/div[1]/div/div[1]/div/ul/li[${item}]/a/h2</arg>
+<arg>${PRODUTO_${item}}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<msg timestamp="20221110 11:49:48.253" level="INFO">Verifying element 'xpath:/html/body/div[15]/div/div[1]/div/div[1]/div/ul/li[3]/a/h2' contains exact text 'Placa'.</msg>
+<status status="PASS" starttime="20221110 11:49:48.251" endtime="20221110 11:49:48.294"/>
+</kw>
+<status status="PASS" starttime="20221110 11:49:48.251" endtime="20221110 11:49:48.295"/>
+</iter>
+<status status="PASS" starttime="20221110 11:49:48.152" endtime="20221110 11:49:48.295"/>
+</for>
+<status status="PASS" starttime="20221110 11:49:48.072" endtime="20221110 11:49:48.295"/>
+</kw>
+<status status="PASS" starttime="20221110 11:49:42.579" endtime="20221110 11:49:48.296"/>
+</test>
+<status status="PASS" starttime="20221110 11:49:42.107" endtime="20221110 11:49:48.298"/>
+</suite>
+<status status="PASS" starttime="20221110 11:49:42.064" endtime="20221110 11:49:48.303"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Lista De Busca">Lista De Busca</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="CT 004">Lista De Busca.CT 004</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
