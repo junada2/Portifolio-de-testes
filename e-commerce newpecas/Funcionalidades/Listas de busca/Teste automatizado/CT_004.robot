@@ -2,6 +2,8 @@
 Test Setup  Abrir o navegador
 #Test Teardown  Fechar o navegador
 Library  SeleniumLibrary
+Library  OperatingSystem
+Suite Setup  Setup chromedriver
 
 
 *** Variables ***
@@ -14,6 +16,9 @@ ${URL}  https://www.newpecas.com.br
 
 
 *** Keywords ***
+Setup chromedriver
+    Append To Environment Variable  PATH  ${EXECDIR}/SeleniumDrivers
+    
 Abrir o navegador  
     Open Browser  ${URL}  ${BROWSER}
     Maximize Browser Window

@@ -1,69 +1,79 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0.1 (Python 3.10.7 on win32)" generated="20221107 12:28:16.092" rpa="false" schemaversion="3">
-<suite id="s1" name="Categorias" source="C:\Users\junin\Desktop\portifolio_testes\portifolio-de-testes\Test_Automation_RobotFramework\Features\Categorias">
-<suite id="s1-s1" name="CT 002" source="C:\Users\junin\Desktop\portifolio_testes\portifolio-de-testes\Test_Automation_RobotFramework\Features\Categorias\CT_002.robot">
-<test id="s1-s1-t1" name="CT_002 - Consultar sessão de teclas variadas" line="44">
+<robot generator="Robot 5.0.1 (Python 3.10.7 on win32)" generated="20221215 11:15:38.077" rpa="false" schemaversion="3">
+<suite id="s1" name="Teste Automatizado" source="C:\Users\junin\Desktop\portifolio_testes\e-commerce newpecas\funcionalidades\Categorias\teste automatizado">
+<suite id="s1-s1" name="CT 002" source="C:\Users\junin\Desktop\portifolio_testes\e-commerce newpecas\funcionalidades\Categorias\teste automatizado\CT_002.robot">
+<kw name="Setup chromedriver" type="SETUP">
+<kw name="Append To Environment Variable" library="OperatingSystem">
+<arg>PATH</arg>
+<arg>${EXECDIR}/SeleniumDrivers</arg>
+<doc>Appends given ``values`` to environment variable ``name``.</doc>
+<msg timestamp="20221215 11:15:38.618" level="INFO">Environment variable 'PATH' set to value 'C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\Git\cmd;C:\Users\junin\AppData\Local\Programs\Python\Python310\Scripts\;C:\Users\junin\AppData\Local\Programs\Python\Python310\;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\junin\AppData\Local\Microsoft\WindowsApps;C:\Users\junin\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\junin\AppData\Local\Programs\Hyper\resources\bin;;C:\Users\junin\Desktop\portifolio_testes\e-commerce newpecas\funcionalidades\Categorias\teste automatizado/SeleniumDrivers'.</msg>
+<status status="PASS" starttime="20221215 11:15:38.617" endtime="20221215 11:15:38.618"/>
+</kw>
+<status status="PASS" starttime="20221215 11:15:38.616" endtime="20221215 11:15:38.619"/>
+</kw>
+<test id="s1-s1-t1" name="CT_002 - Consultar sessão de teclas variadas" line="49">
 <kw name="Abrir o navegador" type="SETUP">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20221107 12:28:16.670" level="INFO">Opening browser 'chrome' to base url 'https://www.newpecas.com.br'.</msg>
-<status status="PASS" starttime="20221107 12:28:16.669" endtime="20221107 12:28:19.956"/>
+<msg timestamp="20221215 11:15:38.622" level="INFO">Opening browser 'chrome' to base url 'https://www.newpecas.com.br'.</msg>
+<status status="PASS" starttime="20221215 11:15:38.621" endtime="20221215 11:15:43.064"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20221107 12:28:19.956" endtime="20221107 12:28:20.137"/>
+<status status="PASS" starttime="20221215 11:15:43.065" endtime="20221215 11:15:43.227"/>
 </kw>
-<status status="PASS" starttime="20221107 12:28:16.668" endtime="20221107 12:28:20.137"/>
+<status status="PASS" starttime="20221215 11:15:38.621" endtime="20221215 11:15:43.228"/>
 </kw>
 <kw name="Acessar a página home do e-comerce NewPeças">
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>class=header-logo</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20221107 12:28:20.139" endtime="20221107 12:28:20.216"/>
+<status status="PASS" starttime="20221215 11:15:43.230" endtime="20221215 11:15:43.346"/>
 </kw>
-<status status="PASS" starttime="20221107 12:28:20.138" endtime="20221107 12:28:20.216"/>
+<status status="PASS" starttime="20221215 11:15:43.229" endtime="20221215 11:15:43.346"/>
 </kw>
 <kw name="Abrir o menu 'Categorias'">
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>id:box-cookies</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20221107 12:28:20.218" endtime="20221107 12:28:20.271"/>
+<status status="PASS" starttime="20221215 11:15:43.348" endtime="20221215 11:15:43.413"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath://*[@id="box-cookies"]/div/div[2]/button</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20221107 12:28:20.272" level="INFO">Clicking element 'xpath://*[@id="box-cookies"]/div/div[2]/button'.</msg>
-<status status="PASS" starttime="20221107 12:28:20.271" endtime="20221107 12:28:20.439"/>
+<msg timestamp="20221215 11:15:43.414" level="INFO">Clicking element 'xpath://*[@id="box-cookies"]/div/div[2]/button'.</msg>
+<status status="PASS" starttime="20221215 11:15:43.414" endtime="20221215 11:15:43.882"/>
 </kw>
 <kw name="Mouse Over" library="SeleniumLibrary">
 <arg>xpath=//*[@id="header-navbar-fixed"]/div[2]/div/div/div/div/ul/li[1]/a</arg>
 <doc>Simulates hovering the mouse over the element ``locator``.</doc>
-<msg timestamp="20221107 12:28:20.439" level="INFO">Simulating Mouse Over on element 'xpath=//*[@id="header-navbar-fixed"]/div[2]/div/div/div/div/ul/li[1]/a'.</msg>
-<status status="PASS" starttime="20221107 12:28:20.439" endtime="20221107 12:28:20.800"/>
+<msg timestamp="20221215 11:15:43.884" level="INFO">Simulating Mouse Over on element 'xpath=//*[@id="header-navbar-fixed"]/div[2]/div/div/div/div/ul/li[1]/a'.</msg>
+<status status="PASS" starttime="20221215 11:15:43.883" endtime="20221215 11:15:44.204"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>xpath=//span[@class="megamenu-title" and contains(text(), '${CATEGORIA}')]</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20221107 12:28:20.800" endtime="20221107 12:28:20.845"/>
+<status status="PASS" starttime="20221215 11:15:44.204" endtime="20221215 11:15:44.241"/>
 </kw>
-<status status="PASS" starttime="20221107 12:28:20.217" endtime="20221107 12:28:20.846"/>
+<status status="PASS" starttime="20221215 11:15:43.347" endtime="20221215 11:15:44.242"/>
 </kw>
 <kw name="Clicar em '${CATEGORIA}'" sourcename="Clicar em '${CATEGORIA}'">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath=//span[@class="megamenu-title" and contains(text(), '${CATEGORIA}')]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20221107 12:28:20.849" level="INFO">Clicking element 'xpath=//span[@class="megamenu-title" and contains(text(), 'Teclas')]'.</msg>
-<status status="PASS" starttime="20221107 12:28:20.848" endtime="20221107 12:28:21.220"/>
+<msg timestamp="20221215 11:15:44.244" level="INFO">Clicking element 'xpath=//span[@class="megamenu-title" and contains(text(), 'Teclas')]'.</msg>
+<status status="PASS" starttime="20221215 11:15:44.243" endtime="20221215 11:15:44.798"/>
 </kw>
-<status status="PASS" starttime="20221107 12:28:20.847" endtime="20221107 12:28:21.220"/>
+<status status="PASS" starttime="20221215 11:15:44.242" endtime="20221215 11:15:44.798"/>
 </kw>
 <kw name="Conferir se apenas teclas são exibidas na seleção">
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>class=product-name</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20221107 12:28:21.222" endtime="20221107 12:28:21.295"/>
+<status status="PASS" starttime="20221215 11:15:44.803" endtime="20221215 11:15:44.875"/>
 </kw>
 <try>
 <branch type="TRY">
@@ -71,33 +81,40 @@
 <arg>class=product-name</arg>
 <arg>Teclas</arg>
 <doc>Verifies that element ``locator`` contains text ``expected``.</doc>
-<msg timestamp="20221107 12:28:21.411" level="INFO">Element 'class=product-name' contains text 'Teclas'.</msg>
-<status status="PASS" starttime="20221107 12:28:21.296" endtime="20221107 12:28:21.412"/>
+<msg timestamp="20221215 11:15:44.913" level="INFO">Element 'class=product-name' contains text 'Teclas'.</msg>
+<status status="PASS" starttime="20221215 11:15:44.875" endtime="20221215 11:15:44.913"/>
 </kw>
-<status status="PASS" starttime="20221107 12:28:21.295" endtime="20221107 12:28:21.412"/>
+<status status="PASS" starttime="20221215 11:15:44.875" endtime="20221215 11:15:44.913"/>
 </branch>
 <branch type="EXCEPT">
 <kw name="Log To Console" library="BuiltIn">
 <arg>Contém produtos sem 'Teclas' no nome</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="NOT RUN" starttime="20221107 12:28:21.412" endtime="20221107 12:28:21.412"/>
+<status status="NOT RUN" starttime="20221215 11:15:44.914" endtime="20221215 11:15:44.914"/>
 </kw>
 <kw name="Capture Element Screenshot" library="SeleniumLibrary">
 <arg>class=product-name</arg>
 <doc>Captures a screenshot from the element identified by ``locator`` and embeds it into log file.</doc>
-<status status="NOT RUN" starttime="20221107 12:28:21.412" endtime="20221107 12:28:21.412"/>
+<status status="NOT RUN" starttime="20221215 11:15:44.914" endtime="20221215 11:15:44.914"/>
 </kw>
-<status status="NOT RUN" starttime="20221107 12:28:21.412" endtime="20221107 12:28:21.412"/>
+<status status="NOT RUN" starttime="20221215 11:15:44.913" endtime="20221215 11:15:44.914"/>
 </branch>
-<status status="PASS" starttime="20221107 12:28:21.295" endtime="20221107 12:28:21.412"/>
+<status status="PASS" starttime="20221215 11:15:44.875" endtime="20221215 11:15:44.915"/>
 </try>
-<status status="PASS" starttime="20221107 12:28:21.221" endtime="20221107 12:28:21.413"/>
+<status status="PASS" starttime="20221215 11:15:44.801" endtime="20221215 11:15:44.915"/>
 </kw>
-<status status="PASS" starttime="20221107 12:28:16.667" endtime="20221107 12:28:21.414"/>
+<kw name="Fechar o navegador" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20221215 11:15:44.918" endtime="20221215 11:15:47.427"/>
+</kw>
+<status status="PASS" starttime="20221215 11:15:44.917" endtime="20221215 11:15:47.428"/>
+</kw>
+<status status="PASS" starttime="20221215 11:15:38.619" endtime="20221215 11:15:47.429"/>
 </test>
-<status status="PASS" starttime="20221107 12:28:16.182" endtime="20221107 12:28:21.418"/>
+<status status="PASS" starttime="20221215 11:15:38.129" endtime="20221215 11:15:47.432"/>
 </suite>
-<status status="PASS" starttime="20221107 12:28:16.132" endtime="20221107 12:28:21.424"/>
+<status status="PASS" starttime="20221215 11:15:38.081" endtime="20221215 11:15:47.437"/>
 </suite>
 <statistics>
 <total>
@@ -106,8 +123,8 @@
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Categorias">Categorias</stat>
-<stat pass="1" fail="0" skip="0" id="s1-s1" name="CT 002">Categorias.CT 002</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="Teste Automatizado">Teste Automatizado</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="CT 002">Teste Automatizado.CT 002</stat>
 </suite>
 </statistics>
 <errors>

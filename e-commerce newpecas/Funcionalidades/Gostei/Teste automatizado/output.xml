@@ -1,98 +1,108 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0.1 (Python 3.10.7 on win32)" generated="20221107 12:30:41.140" rpa="false" schemaversion="3">
-<suite id="s1" name="Gostei" source="C:\Users\junin\Desktop\portifolio_testes\portifolio-de-testes\Test_Automation_RobotFramework\Features\Gostei">
-<suite id="s1-s1" name="CT 003" source="C:\Users\junin\Desktop\portifolio_testes\portifolio-de-testes\Test_Automation_RobotFramework\Features\Gostei\CT_003.robot">
-<test id="s1-s1-t1" name="CT_002 - Validar funcionalidade &quot;Gostei&quot;" line="14">
+<robot generator="Robot 5.0.1 (Python 3.10.7 on win32)" generated="20221215 11:18:03.400" rpa="false" schemaversion="3">
+<suite id="s1" name="Teste Automatizado" source="C:\Users\junin\Desktop\portifolio_testes\e-commerce newpecas\funcionalidades\gostei\teste automatizado">
+<suite id="s1-s1" name="CT 003" source="C:\Users\junin\Desktop\portifolio_testes\e-commerce newpecas\funcionalidades\gostei\teste automatizado\CT_003.robot">
+<kw name="Setup chromedriver" type="SETUP">
+<kw name="Append To Environment Variable" library="OperatingSystem">
+<arg>PATH</arg>
+<arg>${EXECDIR}/SeleniumDrivers</arg>
+<doc>Appends given ``values`` to environment variable ``name``.</doc>
+<msg timestamp="20221215 11:18:03.934" level="INFO">Environment variable 'PATH' set to value 'C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\Git\cmd;C:\Users\junin\AppData\Local\Programs\Python\Python310\Scripts\;C:\Users\junin\AppData\Local\Programs\Python\Python310\;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\junin\AppData\Local\Microsoft\WindowsApps;C:\Users\junin\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\junin\AppData\Local\Programs\Hyper\resources\bin;;C:\Users\junin\Desktop\portifolio_testes\e-commerce newpecas\funcionalidades\gostei\teste automatizado/SeleniumDrivers'.</msg>
+<status status="PASS" starttime="20221215 11:18:03.933" endtime="20221215 11:18:03.934"/>
+</kw>
+<status status="PASS" starttime="20221215 11:18:03.933" endtime="20221215 11:18:03.935"/>
+</kw>
+<test id="s1-s1-t1" name="CT_003 - Validar funcionalidade &quot;Gostei&quot;" line="44">
 <kw name="Abrir o navegador" type="SETUP">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20221107 12:30:41.659" level="INFO">Opening browser 'chrome' to base url 'https://www.newpecas.com.br/produto/led-5mm-vermelho-alto-brilho/685'.</msg>
-<status status="PASS" starttime="20221107 12:30:41.658" endtime="20221107 12:30:45.175"/>
+<msg timestamp="20221215 11:18:03.941" level="INFO">Opening browser 'chrome' to base url 'https://www.newpecas.com.br/produto/led-5mm-vermelho-alto-brilho/685'.</msg>
+<status status="PASS" starttime="20221215 11:18:03.941" endtime="20221215 11:18:08.496"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20221107 12:30:45.176" endtime="20221107 12:30:45.353"/>
+<status status="PASS" starttime="20221215 11:18:08.497" endtime="20221215 11:18:08.629"/>
 </kw>
-<status status="PASS" starttime="20221107 12:30:41.657" endtime="20221107 12:30:45.354"/>
+<status status="PASS" starttime="20221215 11:18:03.940" endtime="20221215 11:18:08.629"/>
 </kw>
 <kw name="Acessar a página de um &quot;produto&quot; do e-commerce NewPeças">
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>class=header-logo</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20221107 12:30:45.357" endtime="20221107 12:30:45.488"/>
+<status status="PASS" starttime="20221215 11:18:08.631" endtime="20221215 11:18:08.780"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>xpath=//button[contains(.,'Continuar e Fechar')]</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20221107 12:30:45.488" endtime="20221107 12:30:45.547"/>
+<status status="PASS" starttime="20221215 11:18:08.781" endtime="20221215 11:18:08.840"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>xpath=//button[contains(.,'Continuar e Fechar')]</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20221107 12:30:45.548" level="INFO">Clicking button 'xpath=//button[contains(.,'Continuar e Fechar')]'.</msg>
-<status status="PASS" starttime="20221107 12:30:45.547" endtime="20221107 12:30:45.749"/>
+<msg timestamp="20221215 11:18:08.842" level="INFO">Clicking button 'xpath=//button[contains(.,'Continuar e Fechar')]'.</msg>
+<status status="PASS" starttime="20221215 11:18:08.841" endtime="20221215 11:18:09.015"/>
 </kw>
-<status status="PASS" starttime="20221107 12:30:45.356" endtime="20221107 12:30:45.750"/>
+<status status="PASS" starttime="20221215 11:18:08.630" endtime="20221215 11:18:09.016"/>
 </kw>
 <kw name="Clicar no botão &quot;Gostei&quot;">
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>xpath=(//span[contains(.,'Gostei')])[2]</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20221107 12:30:45.751" endtime="20221107 12:30:45.801"/>
+<status status="PASS" starttime="20221215 11:18:09.017" endtime="20221215 11:18:09.061"/>
 </kw>
 <kw name="Set Focus To Element" library="SeleniumLibrary">
 <arg>xpath=(//span[contains(.,'Gostei')])[2]</arg>
 <doc>Sets the focus to the element identified by ``locator``.</doc>
-<status status="PASS" starttime="20221107 12:30:45.801" endtime="20221107 12:30:45.825"/>
+<status status="PASS" starttime="20221215 11:18:09.061" endtime="20221215 11:18:09.081"/>
 </kw>
 <kw name="Click Element At Coordinates" library="SeleniumLibrary">
 <arg>xpath=//button[contains(.,'Gostei')]</arg>
 <arg>0</arg>
 <arg>0</arg>
 <doc>Click the element ``locator`` at ``xoffset/yoffset``.</doc>
-<msg timestamp="20221107 12:30:45.827" level="INFO">Clicking element 'xpath=//button[contains(.,'Gostei')]' at coordinates x=0, y=0.</msg>
-<status status="PASS" starttime="20221107 12:30:45.826" endtime="20221107 12:30:46.424"/>
+<msg timestamp="20221215 11:18:09.082" level="INFO">Clicking element 'xpath=//button[contains(.,'Gostei')]' at coordinates x=0, y=0.</msg>
+<status status="PASS" starttime="20221215 11:18:09.081" endtime="20221215 11:18:09.886"/>
 </kw>
-<status status="PASS" starttime="20221107 12:30:45.751" endtime="20221107 12:30:46.425"/>
+<status status="PASS" starttime="20221215 11:18:09.017" endtime="20221215 11:18:09.886"/>
 </kw>
 <kw name="Clicar na funcionalidade &quot;Gostei&quot;">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath=//i[@class='icofont-heart'][1]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20221107 12:30:46.427" level="INFO">Clicking element 'xpath=//i[@class='icofont-heart'][1]'.</msg>
-<status status="PASS" starttime="20221107 12:30:46.426" endtime="20221107 12:30:46.748"/>
+<msg timestamp="20221215 11:18:09.889" level="INFO">Clicking element 'xpath=//i[@class='icofont-heart'][1]'.</msg>
+<status status="PASS" starttime="20221215 11:18:09.889" endtime="20221215 11:18:10.311"/>
 </kw>
-<status status="PASS" starttime="20221107 12:30:46.426" endtime="20221107 12:30:46.749"/>
+<status status="PASS" starttime="20221215 11:18:09.887" endtime="20221215 11:18:10.311"/>
 </kw>
 <kw name="Conferir se o &quot;produto&quot; adicionado consta na lista">
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>class=feature-name</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20221107 12:30:46.752" endtime="20221107 12:30:46.828"/>
+<status status="PASS" starttime="20221215 11:18:10.313" endtime="20221215 11:18:10.383"/>
 </kw>
 <kw name="Element Should Contain" library="SeleniumLibrary">
 <arg>class=feature-name</arg>
 <arg>Led 5Mm Vermelho</arg>
 <doc>Verifies that element ``locator`` contains text ``expected``.</doc>
-<msg timestamp="20221107 12:30:46.865" level="INFO">Element 'class=feature-name' contains text 'Led 5Mm Vermelho'.</msg>
-<status status="PASS" starttime="20221107 12:30:46.828" endtime="20221107 12:30:46.865"/>
+<msg timestamp="20221215 11:18:10.434" level="INFO">Element 'class=feature-name' contains text 'Led 5Mm Vermelho'.</msg>
+<status status="PASS" starttime="20221215 11:18:10.383" endtime="20221215 11:18:10.435"/>
 </kw>
-<status status="PASS" starttime="20221107 12:30:46.752" endtime="20221107 12:30:46.865"/>
+<status status="PASS" starttime="20221215 11:18:10.312" endtime="20221215 11:18:10.435"/>
 </kw>
 <kw name="Fechar o navegador" type="TEARDOWN">
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20221107 12:30:46.867" endtime="20221107 12:30:49.249"/>
+<status status="PASS" starttime="20221215 11:18:10.437" endtime="20221215 11:18:12.915"/>
 </kw>
-<status status="PASS" starttime="20221107 12:30:46.866" endtime="20221107 12:30:49.250"/>
+<status status="PASS" starttime="20221215 11:18:10.436" endtime="20221215 11:18:12.916"/>
 </kw>
-<status status="PASS" starttime="20221107 12:30:41.656" endtime="20221107 12:30:49.250"/>
+<status status="PASS" starttime="20221215 11:18:03.935" endtime="20221215 11:18:12.916"/>
 </test>
-<status status="PASS" starttime="20221107 12:30:41.190" endtime="20221107 12:30:49.254"/>
+<status status="PASS" starttime="20221215 11:18:03.449" endtime="20221215 11:18:12.920"/>
 </suite>
-<status status="PASS" starttime="20221107 12:30:41.144" endtime="20221107 12:30:49.258"/>
+<status status="PASS" starttime="20221215 11:18:03.404" endtime="20221215 11:18:12.925"/>
 </suite>
 <statistics>
 <total>
@@ -101,8 +111,8 @@
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Gostei">Gostei</stat>
-<stat pass="1" fail="0" skip="0" id="s1-s1" name="CT 003">Gostei.CT 003</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="Teste Automatizado">Teste Automatizado</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="CT 003">Teste Automatizado.CT 003</stat>
 </suite>
 </statistics>
 <errors>
